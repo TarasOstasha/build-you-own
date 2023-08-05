@@ -6,6 +6,7 @@ import { ActivatedRoute, ParamMap, Params } from '@angular/router';
 
 
 export interface Tile {
+  id: number;
   title: string;
   cols: number;
   rows: number;
@@ -43,6 +44,7 @@ export class ProductComponent implements OnInit {
 
   tiles: Tile[] = [
     {
+      id: 1,
       title: 'Single-Sided or Double-Sided?',
       cols: 1,
       rows: 1,
@@ -62,6 +64,7 @@ export class ProductComponent implements OnInit {
       ],
     },
     {
+      id: 1,
       title: 'Indoor or Outdoor?',
       cols: 1,
       rows: 1,
@@ -81,6 +84,7 @@ export class ProductComponent implements OnInit {
       ],
     },
     {
+      id: 1,
       title: 'What kind of material?',
       cols: 1,
       rows: 1,
