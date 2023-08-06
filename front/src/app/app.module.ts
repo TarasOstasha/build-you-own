@@ -8,13 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
 import { ProductComponent } from './pages/product/product.component';
+import { ProductFilterPipe } from './pipe/product-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,10 @@ import { ProductComponent } from './pages/product/product.component';
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
